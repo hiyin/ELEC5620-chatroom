@@ -16,7 +16,9 @@
         </div>
       </div>
     </div>
-    <small class="text-muted" v-if="userTyping">@{{ userTyping }} is typing....</small>
+    <div class="user-typing">
+      <small class="text-muted" v-if="userTyping">@{{ userTyping }} is typing....</small>
+    </div>
   </div>
 </template>
 
@@ -56,5 +58,8 @@ export default {
 .message-text {
   color: gray;
   margin-bottom: 0;
+}
+.user-typing {
+  height: 1rem;
 }
 </style>

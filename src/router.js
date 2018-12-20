@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from './views/Login.vue'
-import Chat from './views/Chat.vue'
-import store from './store'
+import ChatDashboard from './views/ChatDashboard.vue'
 
 Vue.use(Router)
 
@@ -18,14 +17,7 @@ export default new Router({
     {
       path: '/chat',
       name: 'chat',
-      component: Chat,
-      beforeEnter: (to, from, next) => {
-        if (store.state.user) {
-          next();
-        } else {
-          next('/');
-        }
-      }
+      component: ChatDashboard,
     }
   ]
 })

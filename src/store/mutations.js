@@ -20,7 +20,7 @@ export default {
   setUsers(state, users) {
     state.users = users
   },
-  clearChatRoom(state) {
+ clearChatRoom(state) {
     state.users = [];
     state.messages = [];
   },
