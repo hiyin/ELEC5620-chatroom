@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "heroku-postinstall": "npm install && npm run build"
+    "start": "node index.js"
   },
   "dependencies": {
     "@pusher/chatkit-client": "^1.2.2",
