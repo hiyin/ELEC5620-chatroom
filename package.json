@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "heroku-postinstall": "npm install && npm run build"
+    "heroku-postinstall": "npm install && npm run build",
     "start": "node index.js"
   },
   "dependencies": {
